@@ -11,7 +11,7 @@ const StateContext = ({ children }) => {
   const [selected, setSelected] = useState("Editorial");
   const [page, setPage] = useState(1);
   const [searchPage, setSearchPage] = useState(1);
-  const [change, setChange] = useState(false);
+  const [change, setChange] = useState(true);
   const [hide, setHide] = useState(false);
   const [filterSelected, setFilterSelected] = useState("Photos");
   const [photoId, setPhotoId] = useState("");
