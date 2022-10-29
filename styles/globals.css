@@ -7,6 +7,6 @@
     @apply columns-1 sm:columns-2 lg:columns-3 gap-x-5 w-[90%] lg:w-[80%] mx-auto 
   }
   .loading{
-    @apply bg-gray-600 h-[100vh] w-[25vw] mb-3 rounded-lg
+    @apply bg-gray-600 h-[100vh] w-[90vw] sm:w-[25vw] mb-3 rounded-lg
   }
 }
