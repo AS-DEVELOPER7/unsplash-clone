@@ -19,6 +19,24 @@ const Nav = () => {
     setChange(true)
     setHide(false)
   }
+    useEffect(() => {
+    const keyDownHandler = event => {
+      console.log('User pressed: ', event.key);
+
+      if (event.key === 'Enter') {
+        event.preventDefault();
+
+        // 👇️ call submit function here
+        handlesearch();
+      }
+    };
+
+    document.addEventListener('keydown', keyDownHandler);
+
+    return () => {
+      document.removeEventListener('keydown', keyDownHandler);
+    };
+  });
   return (
     <div className='flex items-center p-4 '>
       <button className=" "  onClick={()=>home()}>
