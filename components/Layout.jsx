@@ -10,7 +10,7 @@ const Layout = ({children}) => {
     <div className='bg-slate-100 '>
       <Head>
         <title>
-          unsplash-clone
+          Snapshot
         </title>
       </Head>
 <main className='min-h-screen'>
